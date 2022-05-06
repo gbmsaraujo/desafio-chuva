@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+//---------------------------------Colors--------------------------------------//
+$color-gradient: linear-gradient(180deg, #ffb354 0%, #ee7a3a 100%);
+$color-orange: #ed7839;
+$color-header: #fdf1eb;
+$color-white: #ffff;
+$color-overlay: #8d350680;
+
+//---------------------------------Fonts--------------------------------------//
+$font-roboto: "Roboto", sans-serif;
+$font-quicksand: "Quicksand", sans-serif;
+
+//---------------------------------Mixins--------------------------------------//
+@mixin formatText($color, $family, $size, $weight, $align) {
+	color: $color;
+	font-family: $family;
+	font-size: $size;
+	font-weight: $weight;
+	text-align: $align;
+}
+
+@mixin btnConfig($color, $width, $height, $bgcolor, $radius, $size) {
+	color: $color;
+	width: $width;
+	height: $height;
+	background: $bgcolor;
+	border-radius: $radius;
+	font-size: $size;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+
+@mixin boxPost {
+	background: #ffffff;
+	border: 1px solid #e7e7e7;
+	box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.12);
+	border-radius: 4px;
+}
