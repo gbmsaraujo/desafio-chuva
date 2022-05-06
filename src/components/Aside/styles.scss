@@ -1,0 +1,54 @@
+@import "../../scss/variables.scss";
+
+.ct-aside {
+	width: 220px;
+	min-height: 2314px;
+	box-shadow: 0px 0px 10px 0px #00000040;
+	.ct-aside__logo {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		height: 68px;
+		background: $color-gradient;
+		h2 {
+			@include formatText($color-white, $roboto-family, 30px, 700, none);
+		}
+	}
+	nav {
+		ul {
+			li {
+				list-style: none;
+				margin-top: 2px;
+				height: 33px;
+				box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.12);
+				padding: 5px;
+				a {
+					@include formatText(
+						#725c5c,
+						$quicksand-family,
+						15px,
+						500,
+						none
+					);
+					text-decoration: none;
+					margin: 7px 24px;
+				}
+			}
+			.trab-style {
+				position: relative;
+				display: flex;
+				align-items: center;
+				background: $color-header;
+				div {
+					position: absolute;
+					background:$color-gradient;
+					width: 5px;
+					height: 33px;
+					top: 0;
+					left: 0;
+				}
+			}
+		}
+	}
+}

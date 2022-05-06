@@ -1,15 +1,20 @@
+import Aside from "../../components/Aside"
+
 const Home = () =>{
     return(
-        <article>
-            
-
-
-
-
-
-
-
-        </article>
+        <>
+            <Aside />
+            <article>
+    
+    
+    
+    
+    
+    
+    
+    
+            </article>
+        </>
     )
 
 }

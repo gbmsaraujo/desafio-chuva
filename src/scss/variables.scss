@@ -9,8 +9,8 @@ $color-white: #ffff;
 $color-overlay: #8d350680;
 
 //---------------------------------Fonts--------------------------------------//
-$font-roboto: "Roboto", sans-serif;
-$font-quicksand: "Quicksand", sans-serif;
+$roboto-family: "Roboto", sans-serif;
+$quicksand-family: "Quicksand", sans-serif;
 
 //---------------------------------Mixins--------------------------------------//
 @mixin formatText($color, $family, $size, $weight, $align) {
