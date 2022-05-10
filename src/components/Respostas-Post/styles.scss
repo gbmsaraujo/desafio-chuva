@@ -1,0 +1,103 @@
+@import "../../scss/variables.scss";
+
+.ct-respostas {
+	display: flex;
+	flex-direction: column;
+	max-width: 1042px;
+	background: #f8f8f8;
+    margin-left: 15px;
+	.ct-respostas__autor {
+		border: 1px solid #e7e7e7;
+		border-radius: 0px;
+		.ct-autor {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			margin-top: 18px;
+			h3 {
+				margin-left: 23px;
+				@include formatText(
+					#5c5c5c,
+					$quicksand-family,
+					12px,
+					700,
+					none
+				);
+			}
+
+			.autor-check {
+				display: flex;
+				align-items: center;
+				p {
+					@include formatText(
+						$color-orange,
+						$quicksand-family,
+						14px,
+						700,
+						none
+					);
+					margin-right: 33px;
+				}
+				.check-icon {
+					color: $color-orange;
+					font-size: 30px;
+					margin-right: 15px;
+				}
+			}
+		}
+
+		p {
+			margin: 10px 23px;
+			@include formatText(#4d4d4d, $quicksand-family, 14px, 400, none);
+		}
+	}
+}
+
+.ct-respostas {
+	.ct-respostas__usuario {
+		background: #ffff;
+		border: 1px solid #e7e7e7;
+		border-radius: 0px;
+		.ct-autor {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			margin-top: 18px;
+			h3 {
+				margin-left: 23px;
+				@include formatText(
+					#5c5c5c,
+					$quicksand-family,
+					12px,
+					700,
+					none
+				);
+			}
+
+			.autor-check {
+				display: flex;
+				align-items: center;
+				p {
+					@include formatText(
+						$color-orange,
+						$quicksand-family,
+						14px,
+						700,
+						none
+					);
+					margin-right: 33px;
+				}
+				.check-icon {
+					color: $color-orange;
+					font-size: 30px;
+					margin-right: 15px;
+				}
+			}
+		}
+
+		p {
+			margin: 10px 23px;
+			@include formatText(#4d4d4d, $quicksand-family, 14px, 400, none);
+		}
+	}
+}

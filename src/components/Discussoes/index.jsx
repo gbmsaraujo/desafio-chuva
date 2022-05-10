@@ -26,6 +26,7 @@ const Discussoes = () => {
             <div className="ct-btns">
                 <button> <AiOutlinePlus className='ct-btns__icon' /> Criar Tópico </button>
             </div>
+            
 
         </section>
     )
