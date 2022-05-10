@@ -24,12 +24,13 @@
 					31px,
 					$color-orange,
 					4px,
-					16px
+					16px,
+					$quicksand-family
 				);
 				justify-self: flex-end;
 			}
 			.ct-buttons__icons {
-				@include btnConfig(#ffff, 43px, 31px, $color-orange, 4px, 0);
+				@include btnConfig(#ffff, 43px, 31px, $color-orange, 4px, 0, $quicksand-family);
 				padding: 5px;
 				margin-left: 17px;
 			}

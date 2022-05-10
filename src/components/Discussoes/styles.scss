@@ -1,0 +1,65 @@
+@import "../../scss/variables.scss";
+
+.ct-discussoes {
+	border: 1px solid #ececec;
+	border-radius: 3px;
+	margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+    position: relative;
+   
+	.box-title {
+		@include boxTitle(1058px);
+		h2 {
+			@include formatText(#4e4e4e, $roboto-family, 20px, 700, justify);
+			margin: 10px 15px;
+		}
+	}
+
+    h2{
+        @include formatText($color-orange, $roboto-family, 18px, 700, none);
+        margin-top: 15px;
+        align-self: center;
+    }
+    .ct-discussoes__icons{
+        align-self: center;
+        margin-top: 27px;
+        width: 340px;
+        img{
+            margin-left: 50px;
+        }
+    }
+
+    p{
+        @include formatText(#595959, $quicksand-family, 14px, 700, center);
+        margin-bottom: 31px;
+    }
+
+    .ct-btns{
+        align-self: center;
+        margin-top: 200px;
+        position: absolute;
+        button{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 5px;
+            @include btnConfig(
+                #ffff,
+                133px,
+                32px,
+                $color-gradient,
+                4px,
+                16px,
+                $quicksand-family
+            );
+            font-weight: 700;
+            .ct-btns__icon{
+                margin-right: 6px;
+                font-size: larger;
+            }
+        }
+      
+    }
+}

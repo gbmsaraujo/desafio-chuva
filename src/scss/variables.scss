@@ -21,13 +21,14 @@ $quicksand-family: "Quicksand", sans-serif;
 	text-align: $align;
 }
 
-@mixin btnConfig($color, $width, $height, $bgcolor, $radius, $size) {
+@mixin btnConfig($color, $width, $height, $bgcolor, $radius, $size, $family) {
 	color: $color;
 	width: $width;
 	height: $height;
 	background: $bgcolor;
 	border-radius: $radius;
 	font-size: $size;
+	font-family: $family;
 	border: none;
 	outline: none;
 	cursor: pointer;
