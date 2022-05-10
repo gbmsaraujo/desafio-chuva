@@ -1,0 +1,56 @@
+@import "../../scss/variables.scss";
+
+.ct-header {
+	max-width: 1146px;
+	display: flex;
+	align-items: center;
+	margin-left: 220px;
+	background: $color-header;
+	.ct-header__texts {
+		margin-left: 36px;
+		h3 {
+			@include formatText(#725c5c, $roboto-family, 14px, 400, none);
+		}
+		h2 {
+			@include formatText(#725c5c, $roboto-family, 22px, 400, none);
+		}
+		p {
+			@include formatText(#725c5c, $roboto-family, 14px, 400, none);
+		}
+	}
+
+	.ct-header__lang {
+		width: 97px;
+		height: 34px;
+		margin-left: 100px;
+		display: flex;
+		border: 1px solid #cccccc;
+		border-radius: 3px;
+		padding: 5px;
+		justify-content: center;
+		align-items: center;
+		background-color: $color-header;
+		cursor: pointer;
+
+		p {
+			margin-left: 5px;
+			margin-right: 5px;
+			@include formatText(#725c5c, $roboto-family, 14px, 400, none);
+		}
+	}
+
+	.ct-header__login {
+		display: flex;
+		padding: 5px;
+		margin-left: 5px;
+
+		.box-texts {
+			display: flex;
+			flex-direction: column;
+			p,
+			h {
+				align-self: flex-end;
+			}
+		}
+	}
+}
