@@ -15,7 +15,7 @@
 		margin: 15px;
 		cursor: pointer;
 		p {
-			@include formatText(#5c5c5c, $quicksand-family, 14px, 700, justify);
+			@include formatText(#5c5c5c, $quicksand-family, 14px, 400, justify);
 			margin-bottom: 20px;
 			.color-text {
 				color: $color-orange;

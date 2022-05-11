@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./App.scss";
 import Aside from "./components/Aside";
+import CriarTopico from "./components/Criar-Topico";
 import Discussoes from "./components/Discussoes";
 import Header from "./components/Header";
 import Posts from "./components/Posts";
@@ -11,6 +12,9 @@ import FooterImg from "./imgs/footer.png";
 
 function App() {
 	const [clicked, setClicked] = useState(false);
+	const [ createPost, setCreatePost] = useState(false)
+
+
 	return (
 		<div className="App">
 			<Aside />
@@ -19,7 +23,9 @@ function App() {
 			<main className="ct-main">
 				<SectionMain />
 				<Resumo />
-				<Discussoes />
+				
+			{createPost ? <CriarTopico /> : <Discussoes event={()=>setCreatePost(true)}/> }
+
 				<Posts classe="ct-posts" like="1 like" resposta="1 resposta" />
 
 				{clicked ? (

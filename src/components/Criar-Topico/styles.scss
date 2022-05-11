@@ -1,0 +1,97 @@
+@import "../../scss/variables.scss";
+
+.ct-topicos {
+	margin-top: 17px;
+	display: flex;
+	flex-direction: column;
+	border: 1px solid #ececec;
+	border-radius: 3px;
+	.box-title {
+		@include boxTitle(1058px);
+		h2 {
+			@include formatText(#4e4e4e, $roboto-family, 20px, 700, justify);
+			margin: 10px 15px;
+		}
+	}
+	h3 {
+		margin-top: 15px;
+		@include formatText(#5c5c5c, $quicksand-family, 14px, 400, center);
+	}
+	.ct-topicos__assunto {
+		display: flex;
+		flex-direction: column;
+		h3 {
+			align-self: flex-start;
+			margin-left: 17px;
+			@include formatText($color-orange, $roboto-family, 16px, 700, none);
+		}
+		.box-assunto {
+			position: relative;
+			max-width: 1025.52px;
+			height: 39px;
+			border: 1px solid #cccccc;
+			border-radius: 3px;
+			margin: 0 17px;
+			p {
+				position: absolute;
+				margin: 10px 23px;
+				@include formatText(
+					#4d4d4d,
+					$quicksand-family,
+					14px,
+					400,
+					none
+				);
+			}
+		}
+	}
+	.ct-topicos__conteudo {
+		display: flex;
+		flex-direction: column;
+		h3 {
+			align-self: flex-start;
+			margin-left: 17px;
+			@include formatText($color-orange, $roboto-family, 16px, 700, none);
+		}
+		.box-conteudo {
+			position: relative;
+			max-width: 1025.52px;
+			height: 113px;
+			border: 1px solid #cccccc;
+			border-radius: 3px;
+			margin: 0 0 15px 17px;
+			.box-rodape {
+				position: absolute;
+				display: flex;
+				align-items: center;
+				bottom: 0;
+				width: 100%;
+				height: 31px;
+				background: #eaf1f2;
+				border: 1px solid #cccccc;
+				border-radius: 0px 0px 4px 4px;
+
+				.negrito-icon {
+					margin-left: 30px;
+				}
+				.italico-icon {
+					margin-left: 30px;
+				}
+				button {
+					max-width: 205.1px;
+					@include btnConfig(
+						#ffff,
+						100%,
+						31px,
+						$color-gradient,
+						0,
+						15px,
+						$quicksand-family
+					);
+					margin-left: 730px;
+					border-radius: 0px 0px 4px 0px;
+				}
+			}
+		}
+	}
+}
