@@ -1,115 +1,124 @@
-@import '../../scss/variables.scss';
+@import "../../scss/variables.scss";
 
-.ct-posts{
-    display: flex;
-    flex-direction: column;
-    border: 1px solid #E7E7E7;
-    box-shadow: 0px 0px 8px 0px #0000001F;
-    border-radius: 4px;
-    margin-top: 15px;
-    margin-left: 15px;
-    h2{
-        margin-top: 17px;
-        margin-left: 24px;
-        @include formatText($color-orange, $quicksand-family, 16px, 700, none);
+.ct-posts {
+	display: flex;
+	flex-direction: column;
+	border: 1px solid #e7e7e7;
+	box-shadow: 0px 0px 8px 0px #0000001f;
+	border-radius: 4px;
+	margin-top: 15px;
+	margin-left: 15px;
+	h2 {
+		margin-top: 17px;
+		margin-left: 24px;
+		@include formatText($color-orange, $quicksand-family, 16px, 700, none);
 
-    + p{
-        @include formatText(#5C5C5C, $quicksand-family, 12px, 700, none);
-        margin-left: 24px;
-    }
-    }
+		+ p {
+			@include formatText(#5c5c5c, $quicksand-family, 12px, 700, none);
+			margin-left: 24px;
+		}
+	}
 
-    p{
-        margin-left: 24px;
-        margin-top: 10px;
-        @include formatText(#5C5C5C, $quicksand-family, 14px, 400, none);
-    }
-   
-    .ct-footer{
-        display: flex;
-        align-items: center;
-        margin-top: 11px;
-        margin-left: 24px;
-        margin-bottom: 18px;
+	p {
+		margin-left: 24px;
+		margin-top: 10px;
+		@include formatText(#5c5c5c, $quicksand-family, 14px, 400, none);
+	}
 
-        .footer_three{
-            color: $color-orange;
-            margin-right: 21px;
-        }
-        button{
-            @include btnConfig(#fff, 27px, 19px, $color-orange, 2px, none, none);
-            .footer__heart{
-                width: 14px;
-                height: 14px;
-                color: #fff;
-                margin-top: 3px;
-            }
+	.ct-footer {
+		display: flex;
+		align-items: center;
+		margin-top: 11px;
+		margin-left: 24px;
+		margin-bottom: 18px;
 
-           
-        }
-        .footer__texts{
-            margin-bottom: 8px;
-            align-self: center;
-            display: flex;
-        }
-        
-    }
+		.footer_three {
+			color: $color-orange;
+			margin-right: 21px;
+		}
+		button {
+			@include btnConfig(
+				#fff,
+				27px,
+				19px,
+				$color-orange,
+				2px,
+				none,
+				none
+			);
+			.footer__heart {
+				width: 14px;
+				height: 14px;
+				color: #fff;
+				margin-top: 3px;
+			}
+		}
+		.footer__texts {
+			margin-bottom: 8px;
+			align-self: center;
+			display: flex;
+		}
+	}
 }
 
-.ct-posts-select{
-    display: flex;
-    flex-direction: column;
-    border: 1px solid #E7E7E7;
-    box-shadow: 0px 0px 8px 0px #0000001F;
-    border-radius: 4px;
-    margin-top: 15px;
-    margin-left: 15px;
-    cursor: pointer;
-    h2{
-        margin-top: 17px;
-        margin-left: 24px;
-        @include formatText($color-orange, $quicksand-family, 16px, 700, none);
+.ct-posts-select {
+	display: flex;
+	flex-direction: column;
+	border: 1px solid #e7e7e7;
+	box-shadow: 0px 0px 8px 0px #0000001f;
+	border-radius: 4px;
+	margin-top: 15px;
+	margin-left: 15px;
+	cursor: pointer;
+	h2 {
+		margin-top: 17px;
+		margin-left: 24px;
+		@include formatText($color-orange, $quicksand-family, 16px, 700, none);
 
-    + p{
-        @include formatText(#5C5C5C, $quicksand-family, 12px, 700, none);
-        margin-left: 24px;
-    }
-    }
+		+ p {
+			@include formatText(#5c5c5c, $quicksand-family, 12px, 700, none);
+			margin-left: 24px;
+		}
+	}
 
-    p{
-        margin-left: 24px;
-        margin-top: 10px;
-        @include formatText(#5C5C5C, $quicksand-family, 14px, 400, none);
-    }
-   
-    .ct-footer{
-        display: flex;
-        align-items: center;
-        margin-top: 11px;
-        margin-left: 24px;
-        margin-bottom: 18px;
+	p {
+		margin-left: 24px;
+		margin-top: 10px;
+		@include formatText(#5c5c5c, $quicksand-family, 14px, 400, none);
+	}
 
-        .footer_three{
-            color: $color-orange;
-            margin-right: 21px;
-        }
-        button{
-            @include btnConfig(#fff, 27px, 19px, $color-orange, 2px, none, none);
-            .footer__heart{
-                width: 14px;
-                height: 14px;
-                color: #fff;
-                margin-top: 3px;
-            }
+	.ct-footer {
+		display: flex;
+		align-items: center;
+		margin-top: 11px;
+		margin-left: 24px;
+		margin-bottom: 18px;
 
-           
-        }
-        .footer__texts{
-            margin-bottom: 8px;
-            align-self: center;
-            display: flex;
-        }
-        
-    }
+		.footer_three {
+			color: $color-orange;
+			margin-right: 21px;
+		}
+		button {
+			@include btnConfig(
+				#fff,
+				27px,
+				19px,
+				$color-orange,
+				2px,
+				none,
+				none
+			);
+			.footer__heart {
+				width: 14px;
+				height: 14px;
+				color: #fff;
+				margin-top: 3px;
+			}
+		}
+		.footer__texts {
+			margin-bottom: 8px;
+			align-self: center;
+			display: flex;
+		}
+	}
 }
-

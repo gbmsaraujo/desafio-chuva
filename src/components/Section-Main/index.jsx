@@ -7,41 +7,45 @@ import round from "./images/round.png";
 
 const SectionMain = () => {
 	return (
-		<>
-			<section className="ct-txtsEbtns">
+		<section className="ct-section-main">
+			<div className="ct-title-btns">
 				<h1>
 					Análise sensorial de preparações funcionais desenvolvidas
 					para escolares entre 09 e 15 anos, do município de
 					Campinas/SP
 				</h1>
 
-				<div className="ct-txtsEbtns__btns">
-					<button className="ct-buttons__download">Download</button>
+				<div className="ct-btns-aside">
+					<div className="box-buttons">
+						<button className="box-buttons__download">
+							Download
+						</button>
 
-					<BsFillStarFill className="ct-buttons__icons" />
+						<BsFillStarFill className="box-buttons__icons" />
 
-					<button className="ct-buttons__icons">
-						<img src={doiIcon} alt="Ícone do Doi" />
-					</button>
+						<button className="box-buttons__icons">
+							<img src={doiIcon} alt="Ícone do Doi" />
+						</button>
+					</div>
+					<p>COMO CITAR ESSE TRABALHO?</p>
 				</div>
-			</section>
+			</div>
 
-			<p className="how-to-cite">COMO CITAR ESSE TRABALHO?</p>
-
-			<section className="ct-overEdetails">
-				<div className="ct-overEdetails__over">
+			<section className="ct-videoEdetails">
+				<div className="ct-videoEdetails__video">
 					<h2>
 						Análise sensorial de preparações funcionais
 						desenvolvidas para escolares entre 09 e 15 anos, do
 						município de Campinas/SP
 					</h2>
-					<div className="overlay-img"></div>
+					<div className="box-overlay"></div>
 					<img src={videoImg} alt="Imagem do vídeo" />
 
-					<div className="ct-overlay__contents">
+					<div className="ct-overlay-contents">
 						<div className="contents-icon">
 							<img src={round} alt="Ícone Round Video" />
 						</div>
+
 						<div className="contents-txts">
 							<h4>Beatriz Christiane Melo</h4>
 							<h5>FCA / Universidade Estadual de Campinas</h5>
@@ -49,7 +53,7 @@ const SectionMain = () => {
 					</div>
 				</div>
 
-				<div className="ct-overEdetails__details">
+				<div className="ct-videoEdetails__details">
 					<div className="box-title">
 						<h2>Detalhes</h2>
 					</div>
@@ -98,7 +102,7 @@ const SectionMain = () => {
 					</footer>
 				</div>
 			</section>
-		</>
+		</section>
 	);
 };
 

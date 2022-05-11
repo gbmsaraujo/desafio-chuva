@@ -34,8 +34,8 @@ $quicksand-family: "Quicksand", sans-serif;
 	cursor: pointer;
 }
 
-@mixin boxTitle ($width) {
-	background: #FDF1EB;
+@mixin boxTitle($width) {
+	background: #fdf1eb;
 	border: 1px solid #e7e7e7;
 	box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.12);
 	border-radius: 4px;

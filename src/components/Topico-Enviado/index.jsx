@@ -1,31 +1,33 @@
-import "./styles.scss"
+import "./styles.scss";
 import { BsCheckAll } from "react-icons/bs";
 
-const TopicoEnviado = ({event}) =>{
-    return(
-        <section className="ct-enviado">
-            <div className="box-title">
-                <h2> Discussões </h2>
-            </div>  
+const TopicoEnviado = ({ event }) => {
+	return (
+		<section className="ct-enviado">
+			<div className="box-title">
+				<h2> Discussões </h2>
+			</div>
 
-            <h3>Seu tópico foi enviado com sucesso! :D</h3>
+			<h3>Seu tópico foi enviado com sucesso! :D</h3>
 
-            <h4>Agradecemos por sua contribuição, uma notificação será enviada ao seu email assim que seu tópico for respondido!</h4>
+			<h4>
+				Agradecemos por sua contribuição, uma notificação será enviada
+				ao seu email assim que seu tópico for respondido!
+			</h4>
 
-            <p>Descubra outros trabalhos!</p>
-            
-            <div className="separator"></div>
+			<p>Descubra outros trabalhos!</p>
 
-            <button onClick={event}> Criar Novo Tópico </button>
-            
-            <div className="ct-enviado__feedback">
-                    <BsCheckAll className="check-icon" />
-                    <h3>Aguardando feedback dos autores</h3>
-                    <p> Editar Tópico </p>
-            </div>
+			<div className="separator"></div>
 
-        </section>
-    )
-}
+			<button onClick={event}> Criar Novo Tópico </button>
 
-export default TopicoEnviado
+			<div className="ct-enviado__feedback">
+				<BsCheckAll className="check-icon" />
+				<h3>Aguardando feedback dos autores</h3>
+				<p> Editar Tópico </p>
+			</div>
+		</section>
+	);
+};
+
+export default TopicoEnviado;

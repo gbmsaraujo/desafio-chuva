@@ -59,18 +59,23 @@ const RespostasPosts = () => {
 					processo.
 				</p>
 
-                <div className="ct-respostas__autor">
-				<div className="ct-autor">
-					<h3>Ana Carolina</h3>
-					<div className="autor-check">
-						<p>Coautor</p>
-						<BsCheckAll className="check-icon" />
+				<div className="ct-respostas__autor">
+					<div className="ct-autor">
+						<h3>Ana Carolina</h3>
+						<div className="autor-check">
+							<p>Coautor</p>
+							<BsCheckAll className="check-icon" />
+						</div>
 					</div>
+					<p>
+						Resposta do autor é aqui. Relato inscreve-se no campo da
+						análise da dimensão e impacto de processo formativo
+						situado impacto de processo formativo processo resente
+						relato inscreve-se no campo da análise da dimensão e
+						impacto de processo formativo situado impacto de
+						processo formativo processo.
+					</p>
 				</div>
-				<p>
-                Resposta do autor é aqui. Relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo.
-				</p>
-			</div>
 			</div>
 		</section>
 	);

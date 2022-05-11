@@ -4,9 +4,7 @@ import icon2 from "./icons/icone2.svg";
 import icon3 from "./icons/icone3.svg";
 import { AiOutlinePlus } from "react-icons/ai";
 
-
 const Discussoes = ({ event }) => {
-
 	return (
 		<section className="ct-discussoes">
 			<div className="box-title">

@@ -4,142 +4,243 @@
 	max-width: 1060px;
 	margin-top: 20px;
 	margin-left: 263px;
-    
-	.ct-txtsEbtns {
-		width: 100%;
-		display: flex;
-		justify-content: space-between;
-		h1 {
-			@include formatText($color-orange, $roboto-family, 20px, 900, none);
-		}
-
-		.ct-txtsEbtns__btns {
+	.ct-section-main {
+		.ct-title-btns {
 			display: flex;
-			max-width: 240px;
-			width: 100%;
-			.ct-buttons__download {
-				@include btnConfig(
-					#ffff,
-					120px,
-					31px,
-					$color-orange,
-					4px,
-					16px,
-					$quicksand-family
-				);
-				justify-self: flex-end;
-			}
-			.ct-buttons__icons {
-				@include btnConfig(#ffff, 43px, 31px, $color-orange, 4px, 0, $quicksand-family);
-				padding: 5px;
-				margin-left: 17px;
-			}
-		}
-	}
-	.how-to-cite {
-		@include formatText($color-orange, $roboto-family, 14px, 500, none);
-		margin-left: 830px;
-		max-width: 239px;
-	}
-
-	.ct-overEdetails {
-		display: flex;
-		.ct-overEdetails__over {
-			position: relative;
-			max-width: 783px;
-			h2 {
-				margin-top: 35px;
-				margin-left: 32px;
-				@include formatText(#ffff, $roboto-family, 24px, 900, none);
-			}
-			img {
-				width: 100%;
-			}
-			.overlay-img {
-				position: absolute;
-				background: #8d350680;
-				height: 100%;
-				width: 100%;
-			}
-
-			h2 {
-				position: absolute;
-				z-index: 1;
-				height: 100%;
-				width: 100%;
-			}
-
-			.ct-overlay__contents {
-				top: 0;
-				position: absolute;
-				display: flex;
+			justify-content: space-between;
+			@media (max-width: 790px) {
+				flex-direction: column;
 				align-items: center;
-				margin-top: 301px;
-				margin-left: 31px;
-				z-index: 1;
-
-				.contents-txts {
-					margin-left: 17px;
-					h4 {
-						@include formatText(
-							#ffff,
-							$roboto-family,
-							34px,
-							900,
-							none
-						);
-					}
-					h5 {
-						@include formatText(
-							#ffff,
-							$roboto-family,
-							20px,
-							900,
-							none
-						);
-					}
-				}
 			}
-		}
-
-		.ct-overEdetails__details {
-			max-width: 240px;
-			margin-left: 20px;
-			display: flex;
-			flex-direction: column;
-			flex-wrap: wrap;
-			border: 1px solid #ececec;
-			border-radius: 3px;
-			.box-title {
-				background: $color-header;
-				border: 1px solid #ececec;
-				border-radius: 3px 3px 0px 0px;
-				max-width: 240px;
-				margin-bottom: 10px;
-			}
-
-			p {
+			h1 {
 				@include formatText(
-					#5c5c5c,
-					$quicksand-family,
-					14px,
-					500,
+					$color-orange,
+					$roboto-family,
+					20px,
+					900,
 					none
 				);
-			}
-			.ct-asidefooter {
-				margin: 20px 10px;
-				sup {
-					font-size: 10px;
+				@media (max-width: 790px) {
+					font-size: 16px;
 				}
+			}
+
+			.ct-btns-aside {
+				display: flex;
+				flex-direction: column;
+				max-width: 240px;
+				.box-buttons {
+					display: flex;
+					.box-buttons__download {
+						@include btnConfig(
+							#ffff,
+							120px,
+							31px,
+							$color-orange,
+							4px,
+							16px,
+							$quicksand-family
+						);
+						justify-self: flex-end;
+					}
+					.box-buttons__icons {
+						@include btnConfig(
+							#ffff,
+							43px,
+							31px,
+							$color-orange,
+							4px,
+							0,
+							$quicksand-family
+						);
+						padding: 5px;
+						margin-left: 17px;
+					}
+				}
+				p {
+					margin: 12px;
+					justify-items: flex-end;
+					@include formatText(
+						$color-orange,
+						$roboto-family,
+						14px,
+						500,
+						end
+					);
+				}
+			}
+		}
+
+		.ct-videoEdetails {
+			display: flex;
+			flex-wrap: wrap;
+			.ct-videoEdetails__video {
+				position: relative;
+				max-width: 783px;
+				max-height: 439px;
+				h2 {
+					margin-top: 35px;
+					margin-left: 32px;
+					@include formatText(#ffff, $roboto-family, 24px, 900, none);
+					@media (max-width: 1068px) {
+						max-width: 380px;
+						margin-top: 20px;
+						margin-left: 14px;
+						font-size: 16px;
+					}
+
+					@media (max-width: 790px) {
+						max-width: 320px;
+						margin-top: 20px;
+						margin-left: 14px;
+						font-size: 12px;
+					}
+				}
+				img {
+					background-size: 100%;
+					@media (max-width: 1068px) {
+						max-width: 480px;
+					}
+					@media (max-width: 460px) {
+						max-width: 260px;
+					}
+				}
+				.box-overlay {
+					position: absolute;
+					background: #8d350680;
+					width: 100%;
+					height: 100%;
+					z-index: 0;
+					@media (max-width: 1068px) {
+						max-width: 480px;
+						max-height: 270px;
+					}
+				}
+
+				h2 {
+					position: absolute;
+					z-index: 1;
+					width: 100%;
+				}
+
+				.ct-overlay-contents {
+					top: 0;
+					position: absolute;
+					display: flex;
+					align-items: center;
+					margin-top: 301px;
+					margin-left: 31px;
+					z-index: 1;
+					width: 100%;
+					@media (max-width: 1068px) {
+						margin-top: 150px;
+						max-width: 480px;
+						margin-left: 12px;
+					}
+					@media (max-width: 790px) {
+						margin-top: 150px;
+						max-width: 480px;
+					}
+
+					.contents-txts {
+						margin-left: 17px;
+						h4 {
+							@include formatText(
+								#ffff,
+								$roboto-family,
+								34px,
+								900,
+								none
+							);
+							@media (max-width: 1068px) {
+								font-size: 20px;
+							}
+							@media (max-width: 790px) {
+								font-size: 20px;
+							}
+						}
+						h5 {
+							@include formatText(
+								#ffff,
+								$roboto-family,
+								20px,
+								900,
+								none
+							);
+							@media (max-width: 1068px) {
+								font-size: 16px;
+							}
+							@media (max-width: 790px) {
+								font-size: 14px;
+							}
+						}
+					}
+				}
+			}
+
+			.ct-videoEdetails__details {
+				max-width: 240px;
+				margin-left: 20px;
+				display: flex;
+				flex-direction: column;
+				flex-wrap: wrap;
+				border: 1px solid #ececec;
+				border-radius: 3px;
+				@media (max-width: 1024px) {
+					margin: 10px auto;
+				}
+				.box-title {
+					background: $color-header;
+					border: 1px solid #ececec;
+					border-radius: 3px 3px 0px 0px;
+					max-width: 240px;
+					margin-bottom: 10px;
+
+					h2 {
+						margin: 11px 15px;
+						@include formatText(
+							#4e4e4e,
+							$quicksand-family,
+							20px,
+							500,
+							none
+						);
+					}
+				}
+				h3 {
+					margin-top: 10px;
+					@include formatText(
+						#4e4e4e,
+						$quicksand-family,
+						18px,
+						600,
+						none
+					);
+				}
+
 				p {
 					@include formatText(
 						#5c5c5c,
 						$quicksand-family,
-						13px,
+						14px,
 						500,
 						none
 					);
+				}
+				.ct-asidefooter {
+					margin: 20px 10px;
+					sup {
+						font-size: 10px;
+					}
+					p {
+						@include formatText(
+							#5c5c5c,
+							$quicksand-family,
+							13px,
+							500,
+							none
+						);
+					}
 				}
 			}
 		}

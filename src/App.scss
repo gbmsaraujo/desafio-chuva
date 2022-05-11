@@ -3,11 +3,14 @@
 	padding: 0;
 	box-sizing: border-box;
 }
-
-.ct-footer-main{
+.App{
+	max-width: 1366px;
+}
+.ct-footer-main {
 	margin-left: 260px;
 	margin-top: 50px;
-	img{
+	img {
 		width: 100%;
 	}
 }
+
