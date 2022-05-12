@@ -14,6 +14,3 @@ Desafio proposto pela Chuva Inc. para desenvolver uma página do Galoá Ciência
  
  É importante que você tenha o Node instalado. Clone o Projeto, abra-o com o VS Code e no terminal execute o comando <stronger> npm install </stronger> e depois o comando <stronger> npm start </stronger>.
 
-# Observações
-
-Por falta de tempo, não consegui deixar todas as telas responsivas, mas é algo que posso melhorar futuramente, estou aberto a sugestões de melhoras no código.
