@@ -4,6 +4,11 @@
 	max-width: 1060px;
 	margin-top: 20px;
 	margin-left: 263px;
+	@media (max-width: 480px) {
+		margin: 0;
+		width: 100%;
+		padding: 10px;
+	}
 	.ct-section-main {
 		.ct-title-btns {
 			display: flex;
@@ -11,6 +16,10 @@
 			@media (max-width: 790px) {
 				flex-direction: column;
 				align-items: center;
+			}
+
+			@media (max-width: 480px) {
+				padding: 5px;
 			}
 			h1 {
 				@include formatText(
@@ -23,12 +32,20 @@
 				@media (max-width: 790px) {
 					font-size: 16px;
 				}
+				@media (max-width: 480px) {
+					margin: 5px auto;
+					font-size: 14px;
+					text-align: center;
+				}
 			}
 
 			.ct-btns-aside {
 				display: flex;
 				flex-direction: column;
 				max-width: 240px;
+				@media (max-width: 480px) {
+					margin-top: 5px;
+				}
 				.box-buttons {
 					display: flex;
 					.box-buttons__download {
@@ -78,6 +95,9 @@
 				position: relative;
 				max-width: 783px;
 				max-height: 439px;
+				@media (max-width: 460px) {
+					margin: 0 auto;
+				}
 				h2 {
 					margin-top: 35px;
 					margin-left: 32px;
@@ -95,6 +115,13 @@
 						margin-left: 14px;
 						font-size: 12px;
 					}
+
+					@media (max-width: 460px) {
+						margin-left: 8px;
+						text-align: justify;
+						font-size: 12px;
+						max-width: 290px;
+					}
 				}
 				img {
 					background-size: 100%;
@@ -102,8 +129,14 @@
 						max-width: 480px;
 					}
 					@media (max-width: 460px) {
-						max-width: 260px;
+						max-width: 320px;
 					}
+
+					@media (max-width: 360px) {
+						max-width: 300px;
+					}
+					
+
 				}
 				.box-overlay {
 					position: absolute;
@@ -115,6 +148,7 @@
 						max-width: 480px;
 						max-height: 270px;
 					}
+					
 				}
 
 				h2 {
@@ -142,6 +176,21 @@
 						max-width: 480px;
 					}
 
+					@media (max-width: 460px) {
+						margin-top: 100px;
+					}
+					@media (max-width: 360px) {
+						width: 280px;
+						max-height: 270px;
+					}
+					.contents-icon {
+						img {
+							@media (max-width: 460px) {
+								width: 60px;
+							}
+						}
+					}
+
 					.contents-txts {
 						margin-left: 17px;
 						h4 {
@@ -158,6 +207,9 @@
 							@media (max-width: 790px) {
 								font-size: 20px;
 							}
+							@media (max-width: 460px) {
+								font-size: 14px;
+							}
 						}
 						h5 {
 							@include formatText(
@@ -172,6 +224,9 @@
 							}
 							@media (max-width: 790px) {
 								font-size: 14px;
+							}
+							@media (max-width: 460px) {
+								font-size: 12px;
 							}
 						}
 					}

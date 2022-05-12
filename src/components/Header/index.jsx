@@ -2,8 +2,9 @@ import "./styles.scss";
 import { GrLanguage } from "react-icons/gr";
 import { IoMdArrowDropdown } from "react-icons/io";
 import profilePic from "./icons/Imagem.png";
+import { GiHamburgerMenu } from "react-icons/gi";
 
-const Header = () => {
+const Header = ({clique}) => {
 	return (
 		<header className="ct-header">
 			<div className="ct-header-contents">
@@ -20,8 +21,11 @@ const Header = () => {
 				</div>
 
 				<div className="ct-header__boxes">
+					<GiHamburgerMenu className="menu-hamburguer" 
+					onClick={clique}
+					/>
 					<div className="box-lang">
-						<GrLanguage />
+						<GrLanguage className="box-lang__icon" />
 						<p> Pt, Br </p>
 						<IoMdArrowDropdown />
 					</div>

@@ -13,12 +13,14 @@ import FooterImg from "./imgs/footer.png";
 function App() {
 	const [clicked, setClicked] = useState(false);
 	const [ createPost, setCreatePost] = useState(false)
+	const [ sideMenu, setSideMenu ] = useState (false)
 
 
 	return (
 		<div className="App">
-			<Aside />
-			<Header />
+			{!sideMenu ? <Aside classe="ct-aside"/> : <Aside classe="ct-aside-clicked"/>}
+			<Header 
+			clique={(()=> sideMenu ? setSideMenu(false) : setSideMenu(true))}/>
 
 			<main className="ct-main">
 				<SectionMain />

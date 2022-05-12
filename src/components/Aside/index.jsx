@@ -1,8 +1,8 @@
 import "./styles.scss";
 import logo from "./imgs/logo.svg";
-const Aside = () => {
+const Aside = ({ classe }) => {
 	return (
-		<aside className="ct-aside">
+		<aside className={classe}>
 			<div className="ct-aside__logo">
 				<h2>SLACA 2019</h2>
 			</div>

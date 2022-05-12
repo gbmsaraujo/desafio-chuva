@@ -45,8 +45,7 @@ const CriarTopico = ({ event }) => {
 									className="italico-icon"
 								/>
 								<button onClick={() => setSentTopic(true)}>
-									{" "}
-									Enviar{" "}
+									Enviar
 								</button>
 							</div>
 						</div>

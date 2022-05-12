@@ -1,15 +1,33 @@
 @import "../../scss/variables.scss";
 
 .ct-header {
-	max-width: 1366px;
+	max-width: 1440px;
+	width: 100%;
 	background: $color-header;
+	@media (min-width: 1440px) {
+		width: 100%;
+		margin-left: 220px;
+	}
+	@media (max-width: 480px) {
+		width: 100%;
+	}
+	@media (max-width: 360px) {
+		width: 100%;
+		
+	}
+
 	.ct-header-contents {
 		display: flex;
 		align-items: center;
 		justify-content: space-around;
 		margin-left: 220px;
+
 		@media (max-width: 1024px) {
 			flex-direction: column;
+		}
+
+		@media (max-width: 480px) {
+			margin: 0;
 		}
 
 		.ct-header__texts {
@@ -20,7 +38,7 @@
 			h2 {
 				@include formatText(#725c5c, $roboto-family, 22px, 400, none);
 				@media (max-width: 790px) {
-					font-size: 1px;
+					font-size: 10px;
 				}
 			}
 			p {
@@ -31,8 +49,14 @@
 		.ct-header__boxes {
 			display: flex;
 			align-items: center;
-			@media (max-width: 490px) {
-				flex-direction: column;
+			@media (max-width: 480px) {
+				justify-content: space-between;
+			}
+			.menu-hamburguer {
+				display: none;
+				@media (max-width: 480px) {
+					display: block;
+				}
 			}
 			.box-lang {
 				width: 97px;
@@ -46,7 +70,16 @@
 				align-items: center;
 				background-color: $color-header;
 				cursor: pointer;
-
+				@media (max-width: 480px) {
+					margin: 0;
+					margin-left: 5px;
+					width: 80px;
+				}
+				.box-lang__icon {
+					@media (max-width: 480px) {
+						font-size: 10px;
+					}
+				}
 				p {
 					margin-left: 5px;
 					margin-right: 5px;
@@ -57,6 +90,9 @@
 						400,
 						none
 					);
+					@media (max-width: 480px) {
+						font-size: 10px;
+					}
 				}
 			}
 
@@ -70,6 +106,16 @@
 					flex-direction: column;
 					p {
 						align-self: flex-end;
+						@include formatText(
+							#725c5c,
+							$roboto-family,
+							14px,
+							400,
+							none
+						);
+						@media (max-width: 480px) {
+							font-size: 10px;
+						}
 					}
 				}
 			}
